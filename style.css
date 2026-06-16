@@ -1,0 +1,147 @@
+.header{
+    background-color: rgb(17, 168, 255);
+    padding-bottom: 15px;
+}
+.kontak{
+    font-size: small;
+}
+.offcanvas {
+    background-color: #111 !important;
+    color: white;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar{
+    background-color: rgb(15, 32, 225) !important;
+    margin: 0 40px;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+.navbar .nav-link{
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+@media(min-width:992px){
+    .navbar .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: rgb(17, 168, 255);
+        visibility: hidden;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+.navbar .dropdown-menu{
+    display: block;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.navbar .nav-link:hover, .navbar .nav-link.active{
+    color: rgb(255, 255, 255);
+}
+.cari input{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.cari button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.dropdown-item:hover{
+    background-color: rgb(17, 168, 255);
+}
+.dropdown-item{
+    transition: all 0.2s ease;
+}
+.c-item{
+    height: 450px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6) !important;
+    transform: scale(1);
+    transition: transform 3s ease;
+}
+.carousel-item.active .c-img{
+    transform: scale(1.1);
+}
+.c-logo{
+    width: 225px;
+    height: auto;
+}
+.carousel-caption{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.kotak1{
+    background-color: rgb(61, 184, 255);
+}
+.kotak2{
+    background-color: rgb(17, 168, 255);
+}
+.kotak3{
+    background-color: rgb(95, 196, 255);
+}
+.ucapan-kepsek{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 40px;
+}
+.gambar-kepsek img{
+    width: 250px;
+    border-radius: 10px;
+}
+.border{
+    background-color: rgb(61, 184, 255);
+    border-radius: 40px;
+}
+.info-siswa{
+    background-color: rgb(61, 184, 255);
+}
+.info-guru{
+    background-color: rgb(17, 168, 255);
+}
+.info-pendidik{
+    background-color: rgb(95, 196, 255);
+}
+.footer{
+    background-color: rgb(50, 87, 108);
+}
+.footer a {
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: rgb(214, 221, 225) !important;
+    padding-left: 5px;
+}
+.isi{
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+}
+.galeri-img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
